@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <script src="jquery-3.7.1.js"></script>
+    
+</head>
+<body>
+    <h1 id="x"></h1>
+    <button>Click Me First!</button>
+    <button id="fadeOut">Fade Out</button>
+    <button id="fadeIn">Fade In</button>
+    <button id="fadeToggle">Fade Toggle</button>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="slideUp">Slide Up</button>
+    <button id="slideDown">Slide Down</button>
+    <button id="slideToggle">Slide Toggle</button>
+
+
+    <div id="square"></div>
+
+    <style>
+        #square {
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+            margin-top: 50px;
+
+        
+        }
+    </style>
+
+    <script>
+        $("#x").html("IPB University");
+        $("button").eq(0).click(() => {
+            alert("Arya Prasetya Putra Albani_J0403241024");
+            alert("Lanjut?");
+            alert("Gas!");
+        });
+        // window.document.getElementsByTagName("button")[0].onclick = function () {
+        //     alert("TPL");
+        // };
+
+        $("#fadeOut").click(() => { 
+            $("#square").fadeOut();
+        });
+
+        $("#fadeIn").click(() => {
+            $("#square").fadeIn();
+        })
+
+        $("#fadeToggle").click(() => {
+            $("#square").fadeToggle();
+        })
+
+        $("#hide").click(() => {
+            $("#square").hide();
+        })
+
+        $("#show").click(() => {
+            $("#square").show();
+        })
+
+        $("#toggle").click(() => {
+            $("#square").toggle();
+        })
+
+        $("#slideUp").click(() => {
+            $("#square").slideUp();
+        })
+
+        $("#slideDown").click(() => {
+            $("#square").slideDown();
+        })
+
+        $("#slideToggle").click(() => {
+            $("#square").slideToggle();
+        })
+
+    </script>
+
+    
+</body>
+</html>
